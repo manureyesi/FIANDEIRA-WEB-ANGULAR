@@ -7,6 +7,7 @@ import { Route, RouterModule } from '@angular/router';
 
 import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.component';
 import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 const routes: Route[] = [
   {path: '', component: PaginaPrincipalComponent}
@@ -16,7 +17,8 @@ const routes: Route[] = [
   declarations: [
     AppComponent,
     PaginaPrincipalComponent,
-    FooterComponent
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
