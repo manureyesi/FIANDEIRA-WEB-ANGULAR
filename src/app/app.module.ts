@@ -8,9 +8,12 @@ import { Route, RouterModule } from '@angular/router';
 import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { ContactoComponent } from './contacto/contacto.component';
+import { MenuComponent } from './menu/menu.component';
 
 const routes: Route[] = [
-  {path: '', component: PaginaPrincipalComponent}
+  {path: '', component: PaginaPrincipalComponent},
+  {path: 'contacto', component: ContactoComponent}
 ]
 
 @NgModule({
@@ -18,7 +21,9 @@ const routes: Route[] = [
     AppComponent,
     PaginaPrincipalComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    ContactoComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,39 @@
+/* Menu Index */
+#menu{
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	height: 90px;
+}
+#menu #bars_menu{
+	float: right;
+	font-size: 40px;
+    cursor: pointer;
+	margin: 20px 20px 0 0;
+	margin-bottom: 10px;
+	color: white;
+}
+#bars_menu:hover{
+	-webkit-transform: rotateX(27deg);
+	transform: rotateX(27deg);
+	-webkit-animation: one 2s infinite;
+	animation: one 2s infinite;
+	-webkit-animation-direction: alternate;
+	animation-direction: alternate;
+}
+img.logo{
+	animation-name: deslizaFoto;
+    animation-duration: 2s;
+    width: 300px;
+}
+
+@keyframes deslizaFoto {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 300px;
+  }
+}
