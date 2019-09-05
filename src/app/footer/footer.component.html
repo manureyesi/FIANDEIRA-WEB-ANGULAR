@@ -1,54 +1,56 @@
 <footer>
-    <address id="informacion">
+    <div class="row">
+        <div class="col" id="informacion">
 
-        <p class="negrita">FIANDEIRA</p>
-        <p>Calvo Sotelo Nº29 Baixo</p>
-        <p>36880 A Estrada</p>
-        <p class="negrita">De Luns a Venres:</p>
-        <p>Mañás de 10:30 a 13:30</p>
-        <p>Tardes de 17:00 a 20:30</p>
-        <p class="negrita">Sábados:</p>
-        <p>Mañás de 10:30 a 14:00</p>
-        <br>
-        <span><img src="img/ico/001-phone-call.png" alt="Telefono" title="Icono Telefono"><a href="tel:986573571" title="Número de Telefono">986573571</a></span><br/>
-        <span><img src="img/ico/gmail.png" alt="Gmail" title="Icono Gmail"><a class="email" href="mailto:fiandeira.aestrada@gmail.com" title="Correo Fiandeira">fiandeira.aestrada@gmail.com</a></span><br>
-        <span><a class="facebook" href="https://www.facebook.com/fiandeira.aestrada" title="Fiandeira en Facebook" target="_blank"><img src="img/ico/facebook-64.png" alt="Facebook"></a></span>
-        <!--<span><a class="instagram" href="#" title="Fiandeira en Instagram" target="_blank"><img src="img/ico/instagram.png" alt="Instagram"></a></span>-->
-        <span><a class="google" href="https://plus.google.com/101238279539845660240" title="Fiandeira en Google" target="_blank"><img src="img/ico/google-plus-64.png" alt="Google"></a></span>
+            <p class="negrita">FIANDEIRA</p>
+            <p>Calvo Sotelo Nº29 Baixo</p>
+            <p>36880 A Estrada</p>
+            <p class="negrita">De Luns a Venres:</p>
+            <p>Mañás de 10:30 a 13:30</p>
+            <p>Tardes de 17:00 a 20:30</p>
+            <p class="negrita">Sábados:</p>
+            <p>Mañás de 10:30 a 14:00</p>
+            <br>
+            <span><a href="tel:986573571" title="Número de Telefono"><i class="fa fa-phone-square" aria-hidden="true"></i>986573571</a></span><br/>
+            <span><a class="email" href="mailto:fiandeira.aestrada@gmail.com" title="Correo Fiandeira"><i class="fa fa-envelope" aria-hidden="true"></i>fiandeira.aestrada@gmail.com</a></span><br>
+            <span><a class="facebook" href="https://www.facebook.com/fiandeira.aestrada" target="_blank" title="Facebook Fiandeira"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></span><br>
+            <!--<span><a class="instagram" href="#" title="Fiandeira en Instagram" target="_blank"><img src="img/ico/instagram.png" alt="Instagram"></a></span>-->
+            <!--<span><a class="google" href="https://plus.google.com/101238279539845660240" title="Fiandeira en Google" target="_blank"><img src="img/ico/google-plus-64.png" alt="Google"></a></span>-->
+    
+        </div>
 
-    </address>
+        <div class="col" id="estamos">
 
-    <div id="estamos">
+            <h2>ONDE ATOPARNOS</h2>
 
-        <h2>ONDE ATOPARNOS</h2>
+            <nav>
 
-        <nav>
+                <iframe title="Mapa FIANDEIRA" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.651096567478!2d-8.490637384288991!3d42.689932522197545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2f081ea222084d%3A0xf1bd3b9552ac5d0f!2sFIANDEIRA!5e0!3m2!1sgl!2ses!4v1517560617683" style="border:0" allowfullscreen></iframe>
 
-            <iframe title="Mapa FIANDEIRA" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.651096567478!2d-8.490637384288991!3d42.689932522197545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2f081ea222084d%3A0xf1bd3b9552ac5d0f!2sFIANDEIRA!5e0!3m2!1sgl!2ses!4v1517560617683" style="border:0" allowfullscreen></iframe>
-
-        </nav>
-
-    </div>
-
-    <div id="newsletter">
-
-        <h2>SUBSCRÍBETE AO NOSO BOLETÍN INFORMATIVO</h2>
-
-        <div class="form">
-
-            <label for="email">Dirección de correo electrónico:</label><br>
-            <input type="text" name="email" id="email" placeholder="Introduce o teu correo electrónico"><br>
-
-            <span id="erroresnewsletter"></span>
-
-            <input type="button" name="enviar" id="enviarNewsletter" value="Enviar"/>
+            </nav>
 
         </div>
 
+        <div class="col" id="newsletter">
+
+            <h2>SUBSCRÍBETE AO NOSO BOLETÍN INFORMATIVO</h2>
+
+            <div class="form">
+
+                <label for="email">Dirección de correo electrónico:</label><br>
+                <input type="text" name="email" id="email" placeholder="Introduce o teu correo electrónico"><br>
+
+                <span id="erroresnewsletter"></span>
+
+                <input type="button" name="enviar" id="enviarNewsletter" value="Enviar"/>
+
+            </div>
+
+        </div>
     </div>
 
-    <span id="copy">
-        <img src="img/ico/copyright.png" alt="Copyright"><a href="{{urlWeb}}">FIANDEIRA 2011 - {{fecha | date:'yyyy'}} </a><br />
-        <img src="img/ico/idea.png" alt="Idea"><a>Deseñado por ManuReyesI</a>
-    </span>
+    <div class="row" id="copy">
+        <i class="fa fa-copyright" aria-hidden="true"></i><a href="{{urlWeb}}">FIANDEIRA 2011 - {{fecha | date:'yyyy'}} </a><br />
+        <i class="fa fa-lightbulb-o" aria-hidden="true"></i><a>Deseñado por ManuReyesI</a>
+    </div>
 </footer>
