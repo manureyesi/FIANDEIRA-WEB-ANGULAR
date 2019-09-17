@@ -1,5 +1,6 @@
-<app-header></app-header>
-<main>
+<app-header *ngIf="!divGeneralOculto"></app-header>
+<main *ngIf="!divGeneralOculto">
     <router-outlet></router-outlet>
 </main>
-<app-footer></app-footer>
+<app-footer *ngIf="!divGeneralOculto"></app-footer>
+<app-menu *ngIf="!menuOculto"></app-menu>
