@@ -1,7 +1,6 @@
 import { Component , OnInit } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
-import { Subject } from 'rxjs/Subject';
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
+import { MenuService } from 'src/app/menu.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -12,21 +11,16 @@ export class AppComponent implements OnInit {
   title = 'FIANDEIRA-WEB-ANGULAR';
 
   ocultar = "style='visibility: hidden;'";
-  menuOculto$: Observable<boolean>;
 
-  constructor () {}
+  varEstadoMenu$: Observable<boolean>;
+  menuOculto: boolean;
 
-  ngOnInit() {
-    this.menuOculto$ = true;
-    //https://desarrolloweb.com/articulos/practica-observables-angular.html
+  constructor (private menuEstado: MenuService) {
   }
-
-  desocultarMenu() {
-
-    console.log("Funcion: desocultarMenu");
-
-    this.menuOculto$ = false;
-
+  
+  ngOnInit() {
+    this.varEstadoMenu$ = this.menuEstado.getEstadoMenu$();
+    this.varEstadoMenu$.subscribe(estadoMenu => this.menuOculto);
   }
 
 }

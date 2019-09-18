@@ -1,6 +1,6 @@
-<app-header *ngIf="menuOculto"></app-header>
-<main *ngIf="menuOculto">
+<app-header *ngIf="!menuOculto"></app-header>
+<main *ngIf="!menuOculto">
     <router-outlet></router-outlet>
 </main>
-<app-footer *ngIf="menuOculto"></app-footer>
-<app-menu *ngIf="!menuOculto"></app-menu>
+<app-footer *ngIf="!menuOculto"></app-footer>
+<app-menu *ngIf="menuOculto"></app-menu>
